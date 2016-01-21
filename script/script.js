@@ -20,21 +20,26 @@ function spanClassName() {
 			        spans.push(spanElement);
 				}
 			);
-	};
-	paintingSnows()
-	// function snowing() {
-	// 	for (var i = 0; i < 5; i++){
-	//   		paintingSnows()
-	//   	}
-	// }
-	// snowing();
+  	var spanElementPosition = (function() {
+			spans.forEach(function(item, index, array) {
+				item.style.left = randomInteger('0', '100') + '%';	
+				item.style.top = randomInteger('0', '10') + '%';			
+			});
+		})();
 
-	var spanElementPosition = function() {
-		spans.forEach(function(item, index, array) {
-			item.style.left = randomInteger('0', '100') + '%';				
-		});
-	}
-	spanElementPosition();
+	};
+	paintingSnows();
+
+ function snowing() {
+        for (var i = 0; i < 5; i++) {
+
+            setTimeout(paintingSnows, 500*i);
+        }
+    }
+    snowing();
+
+	
+
 }
 
 spanClassName()
