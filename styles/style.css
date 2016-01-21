@@ -1,0 +1,16 @@
+span{
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 35px;
+	height: 35px;
+}
+.snow1{
+	background-image: url(../images/snow1.svg);
+}
+.snow2{
+	background-image: url(../images/snow2.svg);
+}
+.snow3{
+	background-image: url(../images/snow3.svg);
+}
