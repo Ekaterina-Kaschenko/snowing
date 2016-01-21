@@ -14,12 +14,12 @@ function spanClassName() {
 	var classNames = ['snow1', 'snow2', 'snow3'],
   	spans = [];
   	var paintingSnows = function() {
-  			classNames.forEach(setInterval(function(item, index, classNames) {
+  			classNames.forEach(function(item, index, classNames) {
 					spanElement = createSpanElement();
 					spanElement.className = item;        
 			        spans.push(spanElement);
 				}
-			),1000);
+			);
 	};
 	paintingSnows()
 	// function snowing() {
