@@ -23,7 +23,7 @@ function spanClassName() {
   	var spanElementPosition = (function() {
 			spans.forEach(function(item, index, array) {
 				item.style.left = randomInteger('0', '100') + '%';	
-				item.style.top = randomInteger('0', '10') + '%';			
+				item.style.top = randomInteger('0', '50') + '%';			
 			});
 		})();
 
@@ -31,7 +31,7 @@ function spanClassName() {
 	paintingSnows();
 
  function snowing() {
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 100; i++) {
 
             setTimeout(paintingSnows, 500*i);
         }
